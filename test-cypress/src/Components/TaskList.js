@@ -1,9 +1,20 @@
 import React from "react";
 
+const handleChange = (props) => {};
+
 const TaskItem = (props) => (
     <li>
         <div>
-            <label id={`todo-${props.id}`}>{props.name} </label>
+            <label
+                style={{
+                    textDecoration: props.completed && "line-through",
+                    textDecorationColor: props.completed && "green",
+                }}
+                id={`todo-${props.id}`}
+            >
+                {props.name}{" "}
+            </label>
+            <input type="checkbox" onChange={() => handleChange(props)} />
         </div>
     </li>
 );

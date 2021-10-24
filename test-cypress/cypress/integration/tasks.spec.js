@@ -24,7 +24,7 @@ describe("testing task application", () => {
                 completed: false,
             },
         });
-        cy.get(".task-input").type("hello world").type("{enter}");
+        cy.get(".task-input").type("Hello World").type("{enter}");
     });
 
     it("should add task and validate if added successfully", () => {
@@ -45,7 +45,7 @@ describe("testing task application", () => {
 
         cy.get("#error-id").should("not.exist");
         cy.get(".task-input").type(value).type("{enter}");
-        cy.get(".task-list li").should("have.length", 4);
+        cy.get(".task-list li").should("have.length", 6);
         cy.get(".task-list li").should("contain", value);
     });
 });

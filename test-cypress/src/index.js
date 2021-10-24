@@ -1,5 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import TaskApp from './Components/TaskApp'
+import React from "react";
+import ReactDOM from "react-dom";
+import TaskApp from "./Components/TaskApp";
+import "./index.css";
 
-ReactDOM.render(<TaskApp />, document.getElementById('root'))
+ReactDOM.render(<TaskApp />, document.getElementById("root"));
