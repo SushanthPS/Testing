@@ -1,0 +1,17 @@
+.App {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: plum;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: contrast(80%);
+}
